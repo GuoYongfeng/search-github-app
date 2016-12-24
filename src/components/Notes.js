@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Notes extends Component {
   render(){
     return (
-      <h1> this is Notes.message: { this.props.username }</h1>
+      <h3 className="text-center"> 对{ this.props.username } 说：</h3>
     )
   }
 }

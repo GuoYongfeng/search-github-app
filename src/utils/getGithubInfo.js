@@ -21,12 +21,10 @@ function getUserRepos( username ) {
 function getGithubInfo( username ){
   return axios.all([ getUserInfo( username ), getUserRepos( username)] )
     .then( arr => {
-      let data = {
+      return {
         userInfo: arr[0].data,
         userRepos: arr[1].data
       }
-      console.log( data );
-      return data
     });
 }
 
