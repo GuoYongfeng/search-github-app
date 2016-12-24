@@ -1,12 +1,6 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 
-class App extends Component {
-  render(){
-    return (
-      <h1> hello github notetaker. </h1>
-    )
-  }
-}
+import routes from './routes'
 
-render(<App />, document.getElementById('app'))
+render( routes, document.getElementById('app') )
